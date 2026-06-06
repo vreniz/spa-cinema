@@ -19,6 +19,9 @@ export default defineConfig({
     port: 5173,
     // History API fallback: any deep URL (e.g. /shows) returns index.html so
     // the client-side router can take over instead of Vite returning a 404.
-    historyApiFallback: true,
-  },
+   //  historyApiFallback: true,
+    watch{
+      ignore:  ["**/db.json"],
+    }
+  }
 });
