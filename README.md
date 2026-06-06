@@ -8,7 +8,9 @@ A Single Page Application (SPA) for a cinema chain to manage **showtimes** and
 
 ## Project Name
 
-**spa-cinema**
+**spa-cinema** is deployed on Vercel and available at [SPA-CINEMA](https://spa-cinema.vercel.app/)
+
+
 
 ## Description
 
