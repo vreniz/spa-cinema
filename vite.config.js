@@ -20,8 +20,8 @@ export default defineConfig({
     // History API fallback: any deep URL (e.g. /shows) returns index.html so
     // the client-side router can take over instead of Vite returning a 404.
    //  historyApiFallback: true,
-    watch{
+    watch: {
       ignore:  ["**/db.json"],
-    }
-  }
+    },
+  },
 });
