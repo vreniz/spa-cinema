@@ -1,0 +1,177 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@test.com",
+      "password": "A123456",
+      "role": "admin",
+      "name": "Administrador"
+    },
+    {
+      "id": 2,
+      "email": "user@test.com",
+      "password": "A123456",
+      "role": "user",
+      "name": "Usuario"
+    },
+    {
+      "id": 3,
+      "email": "user2@test.com",
+      "password": "A123456",
+      "role": "user",
+      "name": "Usuario 2"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Room A",
+      "capacity": 100,
+      "type": "2D",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "Room B",
+      "capacity": 60,
+      "type": "3D",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "name": "IMAX 1",
+      "capacity": 200,
+      "type": "IMAX",
+      "status": "Active"
+    },
+    {
+      "name": "Dinamix",
+      "capacity": 85,
+      "type": "3D",
+      "status": "Active",
+      "id": 4
+    }
+  ],
+  "shows": [
+    {
+      "id": 1,
+      "movie": "Dune: Part Three",
+      "roomId": 3,
+      "date": "2026-06-12",
+      "time": "20:30",
+      "totalCapacity": 200,
+      "availableSeats": 154,
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "movie": "The Quiet Horizon",
+      "roomId": 1,
+      "date": "2026-06-12",
+      "time": "18:00",
+      "totalCapacity": 100,
+      "availableSeats": 80,
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "movie": "Neon Streets",
+      "roomId": 2,
+      "date": "2026-06-15",
+      "time": "21:15",
+      "totalCapacity": 60,
+      "availableSeats": 58,
+      "status": "Active"
+    },
+    {
+      "id": 4,
+      "movie": "Echoes of Tomorrow",
+      "roomId": 1,
+      "date": "2026-06-18",
+      "time": "16:45",
+      "totalCapacity": 100,
+      "availableSeats": 97,
+      "status": "Active"
+    },
+    {
+      "id": 5,
+      "movie": "Silent Tide",
+      "roomId": 2,
+      "date": "2026-06-20",
+      "time": "19:00",
+      "totalCapacity": 60,
+      "availableSeats": 60,
+      "status": "Cancelled"
+    },
+    {
+      "id": 6,
+      "movie": "Starfall",
+      "roomId": 3,
+      "date": "2026-06-25",
+      "time": "22:00",
+      "totalCapacity": 200,
+      "availableSeats": 198,
+      "status": "Active"
+    },
+    {
+      "movie": "Avatar: The Last airbender",
+      "roomId": 2,
+      "date": "2026-08-23",
+      "time": "20:00",
+      "totalCapacity": 100,
+      "availableSeats": 100,
+      "status": "Active",
+      "id": 7
+    }
+  ],
+  "reservations": [
+    {
+      "id": 2,
+      "userId": 2,
+      "showId": 2,
+      "tickets": 2,
+      "reservationDate": "2026-06-05",
+      "status": "Confirmed"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "showId": 4,
+      "tickets": 3,
+      "reservationDate": "2026-06-04",
+      "status": "Confirmed"
+    },
+    {
+      "userId": 2,
+      "showId": 3,
+      "tickets": 2,
+      "reservationDate": "2026-06-05",
+      "status": "Confirmed",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "showId": 1,
+      "tickets": 1,
+      "reservationDate": "2026-06-05",
+      "status": "Confirmed",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "showId": 6,
+      "tickets": 1,
+      "reservationDate": "2026-06-06",
+      "status": "Pending",
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "showId": 6,
+      "tickets": 1,
+      "reservationDate": "2026-06-06",
+      "status": "Pending",
+      "id": 7
+    }
+  ]
+}

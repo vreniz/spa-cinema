@@ -1,0 +1,22 @@
+/* src/styles/main.css */
+
+/* Load Tailwind CSS v4 (utilities, base, components). */
+@import "tailwindcss";
+
+/*
+  Enable CLASS-BASED dark mode.
+  By default Tailwind v4 reacts to the OS color scheme. This custom variant
+  makes `dark:` utilities apply whenever the <html> element (or any ancestor)
+  has the `.dark` class, which lets us toggle the theme manually.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* A subtle fade-in used when each view is mounted by the router. */
+@keyframes view-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.view-enter {
+  animation: view-fade 0.25s ease-out both;
+}
