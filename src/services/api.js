@@ -2,7 +2,7 @@
 // Centralised HTTP client for the json-server REST API. Every network call in
 // the app goes through here so error handling and the base URL live in one
 // place. Uses the native Fetch API.
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://mi-api-json-b9kj.onrender.com";
 const JSON_HEADERS = { "Content-Type": "application/json" };
 
 // Perform a request and normalise errors. Non-2xx responses throw so callers
