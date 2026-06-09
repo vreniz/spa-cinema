@@ -6,7 +6,7 @@ import { showToast } from "@/utils/toast.js";
 
 // Build one table row. Admins get an "Active" tone, users a neutral one.
 function userRow(user) {
-  const roleTone = user.role === "admin" ? badge("Active") : badge("Pending");
+  const roleTone = user.role === "admin" ? badge("Active") : badge("Active");
   return `
     <tr class="border-b border-slate-100 dark:border-slate-800 last:border-0">
       <td class="px-5 py-3 font-medium">${user.name}</td>
